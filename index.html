@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="info">
+                        <h1>
+                            Информация о пациентах
+                        </h1>
+                        <div class="info__block">
+                            <div class="block__img">
+                                <img src="img/working.png" alt="working" class="img-fluid">
+                            </div>
+                            <div class="block__bottom">
+                                <h2>
+                                    Заполните свой профиль и получите 100 баллов
+                                </h2>
+                                <div class="descr">
+                                    Заполните базовую информацию о себе, чтобы мы могли подбирать для вас 
+    интересные акции и статьи. Информация о пациенте используется только 
+    для автозаполнения формы записи и не видна другим пользователям.
+                                </div>
+                                <div class="button" data-toggle="modal" data-target="#modal">
+                                    <div class="button__left">
+                                        Перейти к заполнению
+                                    </div>
+                                    <div class="button__right">
+                                        +100
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Личные данные</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="subtitle">
+                Факторы риска
+              </div>
+              <div class="important">
+                Эта информация поможет разработать для вас индивидуальный план регулярных обследований, подбирать акции и полезные статьи
+              </div>
+              <form action="#" class="form">
+                  <div class="smoking">
+                    <div class="name">Курение</div>
+                    <div class="smoking__block">
+                        <input type="radio" name="smoke" id="no" checked>
+                        <label for="no">Не курю</label>
+                    </div>
+                    <div class="smoking__block">
+                        <input type="radio" name="smoke" id="yes">
+                        <label for="yes">Курю</label>
+                    </div>
+                   <div class="smoking__block">
+                    <input type="radio" name="smoke" id="no_2">
+                    <label for="no_2">Бросил(а)</label>
+                   </div>  
+                  </div>
+                  <div class="diseases">
+                    <div class="name">Хронические заболевания</div>
+                    <input type="text" name="name" placeholder="Начните вводить название">
+                    <div class="tags">
+                        <div class="tags__block">Аллергия на анальгин</div>
+                        <div class="tags__block">Миопия</div>
+                        <div class="tags__block">Аллергия на анальгин</div>
+                        <div class="tags__block">Миопия</div>
+                        <div class="tags__block">Аллергия на анальгин</div>
+                        <div class="tags__block">Гайморит</div>
+                        <div class="tags__block">Аллергия на анальгин</div>
+                        <div class="tags__block">Миопия</div>
+                        <div class="tags__block">Аллергия на анальгин</div>
+                        <div class="tags__block">Миопия</div>
+                        <div class="tags__block">Депрессия</div>
+                    </div>
+                  </div>
+                  <div class="heredity">
+                    <div class="name">Наследственность</div>
+                    <div class="descr">
+                        Какие из этих болезней были у ваших ближайших родственников (родителей, братьев, сестёр, бабушек, 
+дедушек)? Это может влиять на вашу предрасположенность 
+                    </div>
+                    <div class="men">
+                        <div class="name">Мужчины</div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease">
+                            <label for="disease">Диабет</label>
+                        </div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease-2" checked>
+                            <label for="disease-2">Гипертония</label>
+                        </div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease-3">
+                            <label for="disease-3">Рак простаты</label>
+                        </div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease-4">
+                            <label for="disease-4">Рак толстого кишечника</label>
+                        </div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease-5">
+                            <label for="disease-5">Меланома кожи</label>
+                        </div>
+                    </div>
+                    <div class="women">
+                        <div class="name">Женщины</div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease-6">
+                            <label for="disease-6">Диабет</label>
+                        </div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease-7" checked>
+                            <label for="disease-7">Гипертония</label>
+                        </div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease-8">
+                            <label for="disease-8">Рак молочной железы</label>
+                        </div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease-9">
+                            <label for="disease-9">Рак шейки матки</label>
+                        </div>
+                        <div class="men__block">
+                            <input type="checkbox" id="disease-10">
+                            <label for="disease-10">Рак яичников</label>
+                        </div>
+                    </div>
+                  </div>
+                  
+              </form>
+            </div>
+            <div class="modal-footer">
+              <div class="button">
+                  Добавить
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
